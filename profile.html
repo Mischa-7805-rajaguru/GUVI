@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=2.0">
+<title> Registration Form Using Ajax PHP MySQL </title>
+		
+<link rel="stylesheet" href="css/bootstrap.min.css">
+		
+</head>
+
+	<body>
+	
+	<nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+           
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">PMS</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+	
+	<div class="wrapper">
+	<div class="container body-container">
+    <div class="col-lg-12">
+      <center><h2>Profile : <span id="username"></span></h2></center>
+            
+            <form id="profile_form" class="form-horizontal">
+                
+              <div class="form-group">
+            
+              <label class="col-sm-3 control-label">Age</label>
+              <div class="col-sm-6">
+              <input type="text" id="txt_age" class="form-control" placeholder="enter age" />
+              </div>
+              </div>
+              <div class="form-group">
+              <label class="col-sm-3 control-label">DOB</label>
+              <div class="col-sm-6">
+              <input type="date" id="txt_dob" class="form-control" placeholder="enter dob" />
+              </div>
+              </div>
+              <div class="form-group">
+              <label class="col-sm-3 control-label">Contact</label>
+              <div class="col-sm-6">
+              <input type="text" id="txt_contact" class="form-control" placeholder="enter contact" />
+              </div>
+              </div>
+               
+              
+               
+              
+              <div class="form-group">
+              <div class="col-sm-offset-3 col-sm-6 m-t-15">
+              <button type="submit" id="btn_profile_update" class="btn btn-success">Update Profile</button>
+                      
+                      <button type="button" id="btn_logout" class="btn btn-primary">Logout</button>
+              </div>
+              </div>
+              
+              <div class="form-group">
+                <div id="message" class="col-sm-offset-3 col-sm-6 m-t-15"></div>
+              </div>
+            
+            </form>
+              </div>
+	</div>	
+	</div>
+	
+	<script src="assets/js/jquery-1.12.4-jquery.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="js/profile.js"></script> 
+	</body>
+</html>
+
